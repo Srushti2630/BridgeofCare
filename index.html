@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bridge of Care - Connecting Donors with NGOs</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <h1>Bridge<span>of</span>Care</h1>
+            </div>
+            <div class="nav-links">
+                <a href="#" class="active">Home</a>
+                <a href="#donate">Donate</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+                <a href="#testimonials">Impact</a>
+            </div>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Kindness knows <span>no boundaries</span>; neither do we.</h1>
+                    <p>Bridge of Care connects compassionate donors with verified NGOs and orphanages in need. Your generosity can transform lives today.</p>
+                    <button class="cta-button" id="getStartedBtn">
+                        <i class="fas fa-hands-helping"></i> Donate Now
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Image Gallery Carousel -->
+        <section class="gallery-container">
+            <div class="container">
+                <h2>Our <span>Impact</span> in Pictures</h2>
+                <div class="donation-carousel">
+                    <div><img src="children-1144109_1280.jpg" alt="Children playing"></div>
+                    <div><img src="home-pag1-3 (1).jpg" alt="Happy children"></div>
+                    <div><img src="orp1.jpeg" alt="Orphanage"></div>
+                    <div><img src="orp2.jpeg" alt="Children learning"></div>
+                    <div><img src="orp4.jpeg" alt="Community support"></div>
+                    <div><img src="th (6).jpeg" alt="children"></div>
+                    <div><img src="th (7).jpeg" alt="children"></div>
+                    <div><img src="th (8).jpeg" alt="children"></div>
+                    <div><img src="th (9).jpeg" alt="children"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Donation Options Section -->
+        <section class="donation-section" id="donate">
+            <div class="container">
+                <h2>Make a <span>Difference</span> Today</h2>
+                <p class="subtitle">Choose how you'd like to contribute to our cause</p>
+                
+                <div class="donation-options">
+                    <div class="donation-type" onclick="showDonationForm('goods')">
+                        <i class="fas fa-box-open"></i>
+                        <h3>Donate Goods</h3>
+                        <p>Clothes, food, toys, etc.</p>
+                    </div>
+                    <div class="donation-type" onclick="showDonationForm('money')">
+                        <i class="fas fa-hand-holding-usd"></i>
+                        <h3>Financial Donation</h3>
+                        <p>One-time or monthly</p>
+                    </div>
+                    <div class="donation-type" onclick="showDonationForm('time')">
+                        <i class="fas fa-clock"></i>
+                        <h3>Volunteer Time</h3>
+                        <p>Share your skills</p>
+                    </div>
+                </div>
+
+                <div id="donation-form-container"></div>
+            </div>
+        </section>
+
+        <!-- Impact Counter Section -->
+        <section class="impact-section">
+            <div class="container">
+                <h2>Our Collective <span>Impact</span></h2>
+                <div class="impact-stats">
+                    <div class="stat">
+                        <span class="counter" data-target="1250">0</span>
+                        <p>Donations Made</p>
+                    </div>
+                    <div class="stat">
+                        <span class="counter" data-target="87">0</span>
+                        <p>Partner NGOs</p>
+                    </div>
+                    <div class="stat">
+                        <span class="counter" data-target="3500">0</span>
+                        <p>Lives Touched</p>
+                    </div>
+                    <div class="stat">
+                        <span class="counter" data-target="42">0</span>
+                        <p>Cities Reached</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials" id="testimonials">
+            <div class="container">
+                <h2>Stories of <span>Hope</span></h2>
+                <div class="testimonial-carousel">
+                    <div class="testimonial">
+                        <div class="quote">
+                            <i class="fas fa-quote-left"></i>
+                            <p>Thanks to Bridge of Care, we received winter clothes for all 50 children in our orphanage just before the cold season.</p>
+                            <i class="fas fa-quote-right"></i>
+                        </div>
+                        <div class="author">
+                            <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Priya Sharma">
+                            <h4>Priya Sharma</h4>
+                            <p>Director, Sunshine Orphanage</p>
+                        </div>
+                    </div>
+                    <!-- More testimonials would go here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about-section" id="about">
+            <div class="container">
+                <div class="about-content">
+                    <h2>About <span>Bridge of Care</span></h2>
+                    <p>Founded in 2023, Bridge of Care is a platform dedicated to connecting donors with verified NGOs and orphanages in need. Our mission is to create a seamless giving experience while ensuring transparency in the donation process.</p>
+                    <p>We work with carefully vetted organizations across India to ensure your contributions reach those who need them most.</p>
+                    <button class="cta-button">
+                        <i class="fas fa-heart"></i> Learn More
+                    </button>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216" alt="Team working together">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h3>About Us</h3>
+                    <p>Bridge of Care connects compassionate donors with verified NGOs and orphanages in need, ensuring your generosity makes the maximum impact.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#donate">Donate</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#testimonials">Our Impact</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section contact">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Pune, Maharashtra, India</p>
+                    <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+                    <p><i class="fas fa-envelope"></i> contact@bridgeofcare.org</p>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Bridge of Care. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Chat Widget -->
+    <div class="chat-widget" id="chatWidget">
+        <i class="fas fa-comment-dots"></i>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
